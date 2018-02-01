@@ -1,2 +1,2 @@
-# iOS-React-Native-FlatWhiteUni
-This project is an iOS app developed via react native framework for FlatWhiteUni project
+# Jobs Map
+A react-native based app to enable user to seek all job opportunites around their desired working location.
