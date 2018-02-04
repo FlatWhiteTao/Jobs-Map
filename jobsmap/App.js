@@ -13,8 +13,8 @@ export default class App extends React.Component {
   render() {
     const MainNavigator = TabNavigator({
       // defined a tab navigator
-      Welcome: { screen: WelcomeScreen },
-      Auth: { screen: AuthScreen },
+      welcome: { screen: WelcomeScreen },
+      auth: { screen: AuthScreen },
       // added a nested new screen set
       main: {
         screen: TabNavigator ({
