@@ -17,7 +17,8 @@ class ReviewScreen extends Component {
             color = "rgba(0, 125, 125, 1)"
           />
         ),
-        style: {
+       // to adapt android devices
+       style: {
           marginTop: Platform.os === 'android' ? 24:0
         }
       };
