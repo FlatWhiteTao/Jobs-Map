@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
+// 576904529322770
 
 import store from './store';
 import AuthScreen from './screens/AuthScreen';
@@ -32,7 +33,7 @@ export default class App extends React.Component {
         })
       }
     });
-  
+
     return (
       <Provider store={store}>
         <MainNavigator />
