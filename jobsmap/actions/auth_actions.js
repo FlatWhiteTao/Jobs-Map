@@ -13,7 +13,7 @@ import {
 export const facebookLogin = () => async dispatch => {
   let token = await AsyncStorage.getItem ('fb_token');
   if (token) {
-    // Dispatch an action saying FB is login done
+    // Dispatch an action saying FB login done
     // use payload to cache the token to the redux store
     dispatch ({ type: FACEBOOK_LOGIN_SUCCESS, payload: token});
   }else{
