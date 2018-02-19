@@ -33,6 +33,9 @@ export default class App extends React.Component {
         })
       }
     }, {
+      navigationOptions: {
+        tabBarVisible: false 
+      },
       // configuration options for the main tab navigator
       lazy: true
     });
