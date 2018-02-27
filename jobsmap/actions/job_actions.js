@@ -20,7 +20,7 @@ const JOB_QUERY_PARAMS = {
 const JOB_ROOT_URL = 'http://api.indeed.com/ads/apisearch?';
 
 const buildJobsUrl = (zip) => {
-  const query = qs.stringfy({ ...JOB_QUERY_PARAMS, l: zip})
+  const query = qs.stringify({ ...JOB_QUERY_PARAMS, l: zip})
   return `${JOB_ROOT_URL}${query}`;
 };
 
