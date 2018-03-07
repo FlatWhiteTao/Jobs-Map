@@ -7,8 +7,24 @@ import Swipe from '../components/Swipe';
 
 class DeckScreen extends Component {
   renderCard(job) {
+      const initialRegion = {
+        longitude: job.longitude,
+        latitude: job.latitude,
+        latitudeDelta: 0.045,
+        longitudeDelta: 0.02
+      };
       return (
         <Card title={job.title}>
+          <View style={{ height: 300}}
+            <MapView
+              scrollEnabled={false}
+              style={{ flex: 1 }}
+              cacheEnabled={Platform.OS === 'android' ? true : false}
+              initialRegion={initialRegion}
+            >
+
+              </MapView>
+          </View>
           <View style={styles.detailWrapper}>
             <Text>{job.company}</Text>
             <Text>{job.formattedRelativeTime}</Text>
